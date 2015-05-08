@@ -40,6 +40,12 @@ gem 'spring',        group: :development
 
 gem 'bundler'
 
+
+gem 'activeadmin_hstore_editor'
+
+
+gem 'friendly_id', '~> 5.1.0'
+
 group :development do
   gem 'better_errors'
   gem 'pry-rails'
@@ -55,6 +61,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'validates_formatting_of'
 gem 'tzinfo-data'
+
 
 group :development, :test do
   gem 'dotenv-rails'
