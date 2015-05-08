@@ -52,11 +52,14 @@ ActiveRecord::Schema.define(version: 20150508181848) do
 
   create_table "app_envs", force: true do |t|
     t.hstore   "options"
-    t.text     "name"
+    t.string   "name"
     t.text     "commit"
+    t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "app_envs", ["slug"], name: "index_app_envs_on_slug", unique: true, using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
