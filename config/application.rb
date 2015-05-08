@@ -1,11 +1,15 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require 'dotenv' ; Dotenv.load ".env"
+
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
+HOSTNAME = ENV['HOSTNAME']
 module Ironbank
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
