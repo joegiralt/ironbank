@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  options: 
+  name: MyText
+  commit: MyText
+
+two:
+  options: 
+  name: MyText
+  commit: MyText
